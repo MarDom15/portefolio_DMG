@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martial Domche - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Police Google Fonts pour un style moderne -->
+    <!-- Police Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Icônes FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header avec navigation -->
@@ -24,17 +26,31 @@
         </div>
     </header>
 
-    <!-- Section À propos -->
+    <!-- Section À propos avec photo et message -->
     <section id="about" class="section">
         <div class="container">
-            <h2>À propos de moi</h2>
-            <p>
-                Je suis un ingénieur en Machine Learning et Deep Learning passionné par la résolution de problèmes complexes grâce à l'intelligence artificielle. 
-                J'ai une solide expérience dans la conception, l'optimisation et le déploiement de modèles de Machine Learning, ainsi que dans le traitement d'images et la vision par ordinateur.
-            </p>
-            <p>
-                Mon objectif est de contribuer à des projets innovants tout en continuant à apprendre et à me perfectionner dans les technologies émergentes.
-            </p>
+            <div class="about-content">
+                <div class="profile-photo">
+                    <img src="profile.jpg" alt="Martial Domche">
+                    <div class="photo-overlay">
+                        <p>Hi, I am Martial!</p>
+                        <p>Click here to download my CV and check out my portfolio to see my work.</p>
+                        <a href="cv.pdf" download class="btn">Download CV</a>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>À propos de moi</h2>
+                    <p>
+                        Je suis un ingénieur en Machine Learning et Deep Learning passionné par la résolution de problèmes complexes grâce à l'intelligence artificielle. 
+                        J'ai une solide expérience dans la conception, l'optimisation et le déploiement de modèles de Machine Learning, ainsi que dans le traitement d'images et la vision par ordinateur.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/martial-domche" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/MarDom15" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:mdomche@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -60,16 +76,6 @@
                         Conception et optimisation d'un modèle de segmentation d'images pour la classification et l'analyse de données visuelles.
                     </p>
                     <p><strong>Technologies :</strong> Python, TensorFlow, OpenCV</p>
-                    <a href="https://github.com/MarDom15" target="_blank" class="btn">Voir sur GitHub</a>
-                </div>
-
-                <!-- Projet 3 -->
-                <div class="project-card">
-                    <h3>Automatisation de workflows</h3>
-                    <p>
-                        Mise en place de pipelines d'automatisation pour le déploiement de modèles ML avec Jenkins, Docker et GitHub Actions.
-                    </p>
-                    <p><strong>Technologies :</strong> Jenkins, Docker, GitHub Actions, Google Cloud</p>
                     <a href="https://github.com/MarDom15" target="_blank" class="btn">Voir sur GitHub</a>
                 </div>
             </div>
@@ -105,15 +111,12 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>
-                Vous pouvez me contacter par email ou via LinkedIn. Je suis toujours ouvert à de nouvelles opportunités et collaborations.
-            </p>
-            <div class="contact-info">
-                <p><strong>Email :</strong> mdomche@gmail.com</p>
-                <p><strong>Téléphone :</strong> 01590 6129431</p>
-                <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/martial-domche" target="_blank">Martial Domche</a></p>
-                <p><strong>GitHub :</strong> <a href="https://github.com/MarDom15" target="_blank">MarDom15</a></p>
-            </div>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
         </div>
     </section>
 
