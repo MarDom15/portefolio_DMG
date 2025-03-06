@@ -3,100 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Martial Domche - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Police Google Fonts pour un style moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header avec navigation -->
     <header>
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Martial Domche</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <section id="projets">
-        <h2>Mes Projets</h2>
-        
-        <div class="projet">
-            <h3>Développement et déploiement d'un algorithme de classification spatiale</h3>
-            <p>Développement d'un modèle basé sur les réseaux de neurones convolutifs (CNN) pour distinguer les zones ouvertes et habitées à l'aide d'images satellites. Utilisation de l'architecture U-Net avec des backbones ResNet (18, 34, 50, 101) pour la segmentation sémantique. Déploiement via Streamlit et Docker.</p>
-            <p><strong>Technologies utilisées :</strong> Python, TensorFlow, Streamlit, Docker, Linux</p>
-            <p><strong>Lien GitHub :</strong> <a href="https://github.com/MarDom15" target="_blank">Voir le projet</a></p>
-        </div>
 
-        <div class="projet">
-            <h3>Masterarbeit : Développement d'un modèle de segmentation</h3>
-            <p>Développement d'un modèle de segmentation pour la classification d'images. Utilisation de techniques de Machine Learning et Deep Learning pour optimiser les performances du modèle.</p>
-            <p><strong>Technologies utilisées :</strong> Python, TensorFlow, OpenCV</p>
-            <p><strong>Lien GitHub :</strong> <a href="https://github.com/MarDom15" target="_blank">Voir le projet</a></p>
+    <!-- Section À propos -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis un ingénieur en Machine Learning et Deep Learning passionné par la résolution de problèmes complexes grâce à l'intelligence artificielle. 
+                J'ai une solide expérience dans la conception, l'optimisation et le déploiement de modèles de Machine Learning, ainsi que dans le traitement d'images et la vision par ordinateur.
+            </p>
+            <p>
+                Mon objectif est de contribuer à des projets innovants tout en continuant à apprendre et à me perfectionner dans les technologies émergentes.
+            </p>
         </div>
+    </section>
 
-        <div class="projet">
-            <h3>Projets GitHub</h3>
-            <p>Voici une liste de mes projets disponibles sur GitHub :</p>
-            <ul>
-                <li><a href="https://github.com/MarDom15/projet1" target="_blank">Projet 1</a></li>
-                <li><a href="https://github.com/MarDom15/projet2" target="_blank">Projet 2</a></li>
-                <li><a href="https://github.com/MarDom15/projet3" target="_blank">Projet 3</a></li>
-                <li><a href="https://github.com/MarDom15/projet4" target="_blank">Projet 4</a></li>
-                <li><a href="https://github.com/MarDom15/projet5" target="_blank">Projet 5</a></li>
-                <li><a href="https://github.com/MarDom15/projet6" target="_blank">Projet 6</a></li>
-                <li><a href="https://github.com/MarDom15/projet7" target="_blank">Projet 7</a></li>
-                <li><a href="https://github.com/MarDom15/projet8" target="_blank">Projet 8</a></li>
-                <li><a href="https://github.com/MarDom15/projet9" target="_blank">Projet 9</a></li>
-                <li><a href="https://github.com/MarDom15/projet10" target="_blank">Projet 10</a></li>
-            </ul>
-            <p>Pour voir tous mes projets, visitez mon profil GitHub : <a href="https://github.com/MarDom15" target="_blank">MarDom15</a></p>
+    <!-- Section Projets -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="project-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <h3>Classification spatiale avec CNN</h3>
+                    <p>
+                        Développement d'un modèle de classification spatiale basé sur des réseaux de neurones convolutifs (CNN) pour distinguer les zones habitées et non habitées à partir d'images satellites.
+                    </p>
+                    <p><strong>Technologies :</strong> Python, TensorFlow, Streamlit, Docker</p>
+                    <a href="https://github.com/MarDom15" target="_blank" class="btn">Voir sur GitHub</a>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <h3>Modèle de segmentation d'images</h3>
+                    <p>
+                        Conception et optimisation d'un modèle de segmentation d'images pour la classification et l'analyse de données visuelles.
+                    </p>
+                    <p><strong>Technologies :</strong> Python, TensorFlow, OpenCV</p>
+                    <a href="https://github.com/MarDom15" target="_blank" class="btn">Voir sur GitHub</a>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <h3>Automatisation de workflows</h3>
+                    <p>
+                        Mise en place de pipelines d'automatisation pour le déploiement de modèles ML avec Jenkins, Docker et GitHub Actions.
+                    </p>
+                    <p><strong>Technologies :</strong> Jenkins, Docker, GitHub Actions, Google Cloud</p>
+                    <a href="https://github.com/MarDom15" target="_blank" class="btn">Voir sur GitHub</a>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <section id="competences">
-        <h2>Compétences</h2>
-        <ul>
-            <li><strong>Programmation :</strong> C/C++, Python (Numpy, Pytorch, Pandas, Scikit-learn), R</li>
-            <li><strong>Machine Learning & Deep Learning :</strong> Conception, évaluation, test et déploiement de modèles ML/DL</li>
-            <li><strong>Computer Vision :</strong> Expérience avec TensorFlow, OpenCV</li>
-            <li><strong>Automatisation :</strong> Jenkins, Docker, GitHub Actions, Google Cloud Run</li>
-            <li><strong>Cloud :</strong> Déploiement et gestion d'applications sur AWS EC2, Heroku, Google Cloud</li>
-            <li><strong>Développement :</strong> VSCode, création d'interfaces avec Streamlit et Flask</li>
-            <li><strong>Gestion de projet :</strong> MS-Office, Systems Engineering</li>
-            <li><strong>Traitement des données :</strong> Nettoyage, transformation, normalisation</li>
-            <li><strong>Analyse et visualisation des données :</strong> Matplotlib, Seaborn, Plotly</li>
-            <li><strong>Bases de données :</strong> SQL, NoSQL</li>
-            <li><strong>Mathématiques :</strong> Algèbre linéaire, statistiques, optimisation</li>
-            <li><strong>Versioning :</strong> Git/GitHub</li>
-        </ul>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Machine Learning</h3>
+                    <p>Conception, entraînement et déploiement de modèles ML/DL.</p>
+                </div>
+                <div class="skill">
+                    <h3>Computer Vision</h3>
+                    <p>Traitement d'images et analyse visuelle avec TensorFlow et OpenCV.</p>
+                </div>
+                <div class="skill">
+                    <h3>Cloud & DevOps</h3>
+                    <p>Déploiement sur AWS, Google Cloud, et utilisation de Docker, Jenkins.</p>
+                </div>
+                <div class="skill">
+                    <h3>Programmation</h3>
+                    <p>Python, C/C++, R, SQL, et outils de data science (Pandas, NumPy, Scikit-learn).</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="formation">
-        <h2>Formation</h2>
-        <ul>
-            <li><strong>Machine Learning Zoomcamp</strong> - Formation en Machine Learning avec certification (09/2024 – 01/2025)</li>
-            <li><strong>Master of Science</strong> - FH Westküste (03/2022 – 03/2024) - Spécialisation en Machine Learning et Deep Learning</li>
-            <li><strong>Master en Electrotechnique</strong> - TU Hannover (86 crédits obtenus)</li>
-            <li><strong>Bachelor et Master 1 en Physique Appliquée</strong> - Université de Dschang</li>
-        </ul>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>
+                Vous pouvez me contacter par email ou via LinkedIn. Je suis toujours ouvert à de nouvelles opportunités et collaborations.
+            </p>
+            <div class="contact-info">
+                <p><strong>Email :</strong> mdomche@gmail.com</p>
+                <p><strong>Téléphone :</strong> 01590 6129431</p>
+                <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/martial-domche" target="_blank">Martial Domche</a></p>
+                <p><strong>GitHub :</strong> <a href="https://github.com/MarDom15" target="_blank">MarDom15</a></p>
+            </div>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : mdomche@gmail.com</p>
-        <p>Téléphone : 01590 6129431</p>
-        <p>LinkedIn : <a href="https://www.linkedin.com/in/martial-domche" target="_blank">Martial Domche</a></p>
-        <p>GitHub : <a href="https://github.com/MarDom15" target="_blank">MarDom15</a></p>
-        <form>
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre email" required>
-            <textarea placeholder="Votre message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Martial Domche. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="script.js" defer></script>
 </body>
 </html>
