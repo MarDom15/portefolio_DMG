@@ -11,46 +11,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header avec navigation -->
-    <header>
-        <div class="container">
-            <h1>Martial Domche</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Section Accueil (Photo en plein écran) -->
+    <section id="home" class="fullscreen-section">
+        <div class="overlay">
+            <div class="home-content">
+                <h1>Hi, I am Martial!</h1>
+                <p>Click here to download my CV and check out my portfolio to see my work.</p>
+                <a href="cv.pdf" download class="btn">Download CV</a>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Section À propos avec photo et message -->
+    <!-- Section À propos -->
     <section id="about" class="section">
         <div class="container">
-            <div class="about-content">
-                <div class="profile-photo">
-                    <img src="profile.jpg" alt="Martial Domche">
-                    <div class="photo-overlay">
-                        <p>Hi, I am Martial!</p>
-                        <p>Click here to download my CV and check out my portfolio to see my work.</p>
-                        <a href="cv.pdf" download class="btn">Download CV</a>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h2>À propos de moi</h2>
-                    <p>
-                        Je suis un ingénieur en Machine Learning et Deep Learning passionné par la résolution de problèmes complexes grâce à l'intelligence artificielle. 
-                        J'ai une solide expérience dans la conception, l'optimisation et le déploiement de modèles de Machine Learning, ainsi que dans le traitement d'images et la vision par ordinateur.
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/martial-domche" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/MarDom15" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="mailto:mdomche@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis un ingénieur en Machine Learning et Deep Learning passionné par la résolution de problèmes complexes grâce à l'intelligence artificielle. 
+                J'ai une solide expérience dans la conception, l'optimisation et le déploiement de modèles de Machine Learning, ainsi que dans le traitement d'images et la vision par ordinateur.
+            </p>
         </div>
     </section>
 
@@ -123,6 +102,11 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/martial-domche" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MarDom15" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:mdomche@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
             <p>&copy; 2024 Martial Domche. Tous droits réservés.</p>
         </div>
     </footer>

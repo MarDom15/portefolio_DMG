@@ -18,90 +18,54 @@ body {
     margin: 0 auto;
 }
 
-/* Header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-nav ul {
-    list-style: none;
+/* Section Accueil (Photo en plein écran) */
+.fullscreen-section {
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* Section À propos */
-.about-content {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
-}
-
-.profile-photo {
+    text-align: center;
+    color: #fff;
     position: relative;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 50%;
 }
 
-.profile-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.photo-overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
-.profile-photo:hover .photo-overlay {
-    opacity: 1;
+.home-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-.photo-overlay p {
-    margin: 5px 0;
+.home-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
-.social-icons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.social-icons a {
-    color: #333;
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #555;
+.btn:hover {
+    background-color: #555;
 }
 
 /* Sections */
@@ -136,20 +100,6 @@ nav ul li a {
 
 .project-card p {
     margin-bottom: 15px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #555;
 }
 
 /* Compétences */
@@ -205,4 +155,19 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ddd;
 }
