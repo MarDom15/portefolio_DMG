@@ -1,1 +1,0 @@
-# portefolio_DMG
